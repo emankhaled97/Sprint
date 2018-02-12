@@ -1,0 +1,132 @@
+Khaled-Tawheeds-MacBook-Pro:~ Eman.K.Tawheed$ mkdir Sprint
+Khaled-Tawheeds-MacBook-Pro:~ Eman.K.Tawheed$ cd Sprint
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git init 
+Initialized empty Git repository in /Users/Eman.K.Tawheed/Sprint/.git/
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	1.1.txt
+	3.1.txt
+	5.1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git add .
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   1.1.txt
+	new file:   3.1.txt
+	new file:   5.1.txt
+
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git commit -m" 3 files have been added "
+[master (root-commit) 02a7c44]  3 files have been added
+ 3 files changed, 6 insertions(+)
+ create mode 100644 1.1.txt
+ create mode 100644 3.1.txt
+ create mode 100644 5.1.txt
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ 
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git rm 3.1.txt 
+rm '3.1.txt'
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    3.1.txt
+
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git commit -m "I deleted the 3.1 file "
+[master 967b84a] I deleted the 3.1 file
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 3.1.txt
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git log 
+commit 967b84a3869ce0e1d045acae8f779bc720175609 (HEAD -> master)
+Author: eman <eman.tawheed@gmail.com>
+Date:   Mon Feb 12 19:29:31 2018 +0200
+
+    I deleted the 3.1 file
+
+commit 02a7c44088fc2045c4c527d97192d326a05c06d6
+Author: eman <eman.tawheed@gmail.com>
+Date:   Mon Feb 12 19:19:18 2018 +0200
+
+     3 files have been added
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git revert 967b84a3869ce0e1d045acae8f779bc720175609
+Revert "I deleted the 3.1 file"
+
+This reverts commit 967b84a3869ce0e1d045acae8f779bc720175609.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       new file:   3.1.txt
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+"~/Sprint/.git/COMMIT_EDITMSG" 11L, 303C
+Khaled-Tawheeds-MacBook-Pro:~ Eman.K.Tawheed$ git init 
+Reinitialized existing Git repository in /Users/Eman.K.Tawheed/.git/
+Khaled-Tawheeds-MacBook-Pro:~ Eman.K.Tawheed$ cd Sprint 
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git init 
+Reinitialized existing Git repository in /Users/Eman.K.Tawheed/Sprint/.git/
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   3.1.txt
+
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git commit -m "The deleted file has been reverted"
+[master f1fea61] The deleted file has been reverted
+ 1 file changed, 1 insertion(+)
+ create mode 100644 3.1.txt
+ Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ touch README.md 
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git branch ReadMe
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git checkout ReadMe 
+Switched to branch 'ReadMe'
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git add README.md 
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git status 
+On branch ReadMe
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README.md
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ git commit -m " I added the ReadMe file "
+[ReadMe 4dd9dcf]  I added the ReadMe file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+Khaled-Tawheeds-MacBook-Pro:Sprint Eman.K.Tawheed$ 
+
+
+
+
+
+
+
+
